@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>Informatički projekt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<!--- Pozadina --->
+
+<section class="kheader">
+        <nav>
+            <a href="Index.html"> </a>
+             <div class="klinks" id="nLink">
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="iphone.html">Iphone</a></li>
+                    <li> <a href="ostalo.html">Ostalo</a></li>
+                    <li> <a href="Sigurnost.html">Sigurnost</a></li>
+                    <li> <strong><a href="kontakt.html"style="font-size: 25px;">Kontakt</a></strong></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-times" onclick="showMenu()"></i>
+
+        </nav>
+
+</section>
+
+
+
+
+
+<section class="lokacija">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7545.163617873653!2d-122.01021689662328!3d37.334209500561315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1shr!2sba!4v1655439214591!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+
+
+
+<section class="kontaktirajme">
+    <div class="kontakt-col"></div>
+        <div>
+            <span>
+                <h5>Adresa</h5>
+                <p>One Apple Park Way, Cupertino, CA 95014, Sjedinjene Američke Države Cupertino, Kalifornija, SAD</p>
+            </span>
+        </div>
+
+
+        <div>
+            <span>
+                <h5>Broj Apple-a</h5>
+                <p>+14089961010</p>
+            </span>
+        </div>
+
+        <div>
+            <span>
+                <h5>Apple email: kontaktiraj nas</h5>
+                <p>@email.apple.com</p>
+            </span>
+        </div>
+
+
+    <div class="kontakt-col">
+        <form action="">
+            <input type="text" placeholder="Unesi ime" required>
+            <input type="email" placeholder="Unesi email adresu" required>
+            <input type="text" placeholder="O čemu se radi" required>
+            <textarea rows="8" placeholder="Komentar" required></textarea>
+            <button type="button" class="posjeta">Pošalji zahtjev</button>
+        </form>
+    </div>
+
+</section>
+
+
+
+
+<!--- Footer --->
+
+<div class="footer">
+    <div class="unutarnji_footer">
+        <div class="alogo">
+            <img src="slike/logo.png" style="width: 150px" height="150px">
+        </div>
+
+        <div class="mfooter">
+            <h1>O nama</h1>
+            <input type=button value="Terms & Condition" onclick="TOS();" style="width: 160px">
+            <br><br>
+            <input type=button value="O meni" onclick="privatno();" style="width: 160px">
+        </div>
+
+        <div class="mfooter">
+            <h1>Kontaktiraj me na:</h1>
+            <input type=button value="Email" onclick="email();" style="width: 160px">
+            <br><br>
+            <input type=button value="Broj" onclick="broj();" style="width: 160px">
+        </div>
+
+        <div class="mfooter">
+            <h1>Radno vrijeme</h1>
+            0-24h pon-pet
+            <br><br>
+            Klikni za trenutno vrijeme:
+            <br>
+            <input type=button value="Pokaži vrijeme" onclick="Pokazi_vrijeme();">
+            <div id=display></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+
+    // Menu
+    var nLink = document.getElementById("nLink")
+    function showMenu(){
+        nLink.style.right = "0"
+    }
+        function hideMenu(){
+        nLink.style.right = "-200"
+    }
+
+
+
+    // TOS scripta
+    function TOS(){
+        alert("Poštuj ova pravila!" +  "\n" + "\n" + "\n" + "Ne dijeliti ovu stranicu" + "\n" + "\n" + "Kontakt je samo za ozbiljne osobe" + "\n" + "\n" + "Nemoj pisati ružne riječi!")
+   }
+
+    // O meni scripta
+    function privatno(){
+        alert("Valentin Pejić" +  "\n" + "\n" + "Prva godina informatike" +  "\n" + "\n" + "Moja prva web stranica")
+   }
+
+    // Email script
+    function email(){
+        alert("Ovo je moja email adresa:" +  "\n" + "\n" + "valentin.pejic@fpmoz.sum.ba")
+   }
+    // Broj script
+    function broj(){
+        alert("Ovo je moj privatni broj" +  "\n" + "\n" + "+38763673482")
+   }
+
+
+
+
+
+
+    // Vrijeme scripta
+    function Pokazi_vrijeme() {
+        let my_time = new Date();
+        document.getElementById('display').innerHTML=my_time
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
